@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/original"
+
+    android:layout_height="match_parent"
+    tools:context="com.example.kayarkar.sita.outActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        android:layout_marginStart="38dp"
+        android:text="stop"
+        android:onClick="stop"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:background="@drawable/shape"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button7"
+        android:layout_toEndOf="@+id/button7"
+        android:onClick="start"
+        android:text="start" />
+
+    <EditText
+        android:id="@+id/headingInput"
+        android:layout_width="250dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_alignTop="@+id/button5"
+        android:layout_gravity="center"
+        android:hint="enter massege" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="74dp"
+        android:background="@drawable/shape"
+        android:onClick="send"
+        android:text="send"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button7"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape"
+        android:onClick="play"
+        android:text="play song"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:textColor="@color/black"
+        android:layout_above="@+id/button3"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_marginBottom="44dp"
+        android:onClick="stopsong"
+        android:text="stop song" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button6"
+        android:layout_marginBottom="54dp"
+        android:layout_toEndOf="@+id/button3"
+        android:background="@drawable/shape"
+        android:onClick="view"
+        android:text="view baby"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:onClick="on"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignParentStart="true"
+        android:text="fan on" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:onClick="of"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignStart="@+id/button5"
+        android:text="fan of" />
+
+
+</RelativeLayout>

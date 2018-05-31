@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/original"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/testView1"
+        android:layout_width="wrap_content"
+        android:background="@color/main"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtString"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtString"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/testView1"
+        android:layout_alignParentBottom="true"
+        android:text=""
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/buttonOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/testView1"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/testView1"
+        android:background="@drawable/shape"
+        android:text="swing"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/buttonOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonOn"
+        android:layout_alignBottom="@+id/buttonOn"
+        android:layout_alignStart="@+id/button11"
+        android:background="@drawable/shape"
+        android:text="stop"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="97dp"
+        android:background="@drawable/shape"
+        android:onClick="off"
+        android:text="Fan off "
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button10"
+        android:layout_alignBottom="@+id/button10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/shape"
+        android:onClick="onn"
+        android:text="Fan oN"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonOn"
+        android:layout_alignStart="@+id/buttonOn"
+        android:background="@drawable/shape"
+android:onClick="slow"
+        android:layout_marginBottom="65dp"
+        android:text="slow speed " />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button9"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_alignEnd="@+id/buttonOff"
+        android:background="@drawable/shape"
+        android:onClick="medium"
+
+        android:layout_marginEnd="20dp"
+        android:text="medium speed" />
+
+</RelativeLayout>
